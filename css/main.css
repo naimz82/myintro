@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #be1e2d;
+    --secondary-color: #ffffff;
+    --bg-light: #f8f8f8;
+    --bg-dark: #131313;
+    --text-dark: #333333;
+    --text-light: #f0f0f0;
+    --yellow: #FFC759;
+    --dark-grey: #607196;
+    --light-grey: #BABFD1;
+    --off-white: #E8E9ED;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: var(--bg-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/naimz.jpg);
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.site-info h1 {
+    font-family: 'Allura', cursive;
+    font-size: 9rem;
+    color: var(--yellow);
+    margin: 0;
+}
+
+.site-info a {
+    color: var(--off-white);
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.site-info a:hover {
+    border-bottom: dashed 1px var(--yellow);
+}
+
+
+
