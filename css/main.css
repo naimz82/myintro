@@ -35,6 +35,10 @@ a {
     text-decoration: none;
 }
 
+input, button, select {
+    font-family: inherit;
+}
+
 #main-container {
     position: relative;
     width: 100%;
@@ -48,6 +52,11 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    row-gap: 50px;
+}
+
+#main-container.inner-container {
+    justify-content: flex-start;
 }
 
 .site-info > span {
@@ -60,6 +69,11 @@ a {
     font-size: 9rem;
     color: var(--yellow);
     margin: 0;
+}
+
+.inner-container .site-info h1 {
+    font-size: 3rem;
+    margin-top: 1.5rem;
 }
 
 .site-info a {
@@ -77,5 +91,183 @@ a {
     border-bottom: dashed 1px var(--yellow);
 }
 
+.contents {
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.google-search > form {
+    position: relative;
+    width: 300px;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    padding-right: 28px;
+    height: 28px;
+    width: 28px; /* initial width */
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container.open {
+    width: 100%; /* full width when open */
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container > input {
+    border: none;
+    font-family: inherit;
+    padding: 2px 5px;
+    width: 100%;
+}
+
+.search-container > input:focus {
+    outline: none;
+}
+
+.search-container > button {
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-container .toggle-search {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+nav {
+    position: fixed;
+    top: 50px;
+    left: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+
+nav ul li a:hover {
+    border-bottom: solid 2px var(--yellow);
+}
+
+.contents .inner-title {
+    font-size: 32px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.contents .inner-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--yellow);
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+}
+
+.contents .maths-questions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 400px;
+    position: relative;
+}
+
+.contents .maths-questions .question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contents .maths-questions .question-row > div {
+    font-size: 50px;
+}
+
+.contents .maths-questions .question-row .qs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 120px;
+    border: solid 1px #b8b8b8;
+}
+
+.contents .maths-questions .answer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.contents .maths-questions .answer-row .ans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    font-size: 60px;
+}
+
+.contents .maths-questions .answer-row .ans input {
+    width: 100%;
+    text-align: center;
+    font-size: 56px;
+}
+
+.contents .maths-questions .answer-row .submit-btn {
+    background-color: var(--yellow);
+    color: var(--text-dark);
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%
+}
+
+.contents .maths-questions .answer-row .submit-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
 
 
