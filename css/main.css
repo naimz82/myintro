@@ -44,8 +44,18 @@ input, button, select {
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#main-container > .left-col {
+    flex: 1;
+}
+
+#main-container > .right-col {
+    width: 210px;
+    flex: 0;
 }
 
 ul.nav {
@@ -105,13 +115,22 @@ ul.nav li a:hover {
     border-bottom: dashed 1px var(--yellow);
 }
 
+.image {
+    position: relative;
+    border: solid 5px white;
+}
+
+.image > img {
+    display: block;
+    width: 100%;
+}
+
+
 .contents {
     color: white;
     font-weight: 500;
     font-size: 1.2rem;
 }
-
-
 
 .contents .inner-title {
     font-size: 32px;
