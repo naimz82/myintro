@@ -44,12 +44,15 @@ input, button, select {
     width: 100%;
     min-height: 100vh;
     padding: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 ul.nav {
     list-style: none;
     padding: 0px;
     margin: 0px;
+    margin-bottom: 50px;
     display: flex;
     column-gap: 30px;
 }
