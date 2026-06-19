@@ -80,40 +80,32 @@ ul.nav li a:hover {
     border-bottom: solid 2px var(--yellow);
 }
 
-#main-container.inner-container {
-    justify-content: flex-start;
-}
-
-.site-info > span {
-    display: flex;
-    column-gap: 50px;
-}
-
-.site-info h1 {
+.main-info h1 {
     font-family: 'Allura', cursive;
     font-size: 9rem;
     color: var(--yellow);
     margin: 0;
 }
 
-.inner-container .site-info h1 {
-    font-size: 3rem;
-    margin-top: 1.5rem;
-}
-
-.site-info a {
-    color: var(--off-white);
-    font-size: 1rem;
-    font-weight: 500;
-    /*display: inline-block;
-    margin-right: 50px;*/
+.main-info .profile-info {
     display: flex;
-    align-items: center;
-    column-gap: 10px;
+    flex-direction: column;
 }
 
-.site-info a:hover {
-    border-bottom: dashed 1px var(--yellow);
+.main-info .profile-info .row {
+    display: flex;
+    position: relative;
+    height: 30px;
+    padding: 1px;
+    gap: 1px;
+}
+
+.main-info .profile-info .row > span:nth-child(1) {
+    display: flex;
+    aspect-ratio: 1 / 1;
+    background-color: var(--dark-grey);
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
