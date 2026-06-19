@@ -1,6 +1,6 @@
 # MyIntro Web
 
-**This is published as a GitHub Pages**
+**This is published on GitHub Pages**
 
 This web page (myintro) is a template for an online profile or resume. Feel free to clone this and use for your own purposes, publish your online resume online for free on GitHub Pages.
 
