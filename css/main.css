@@ -90,14 +90,15 @@ ul.nav li a:hover {
 .main-info .profile-info {
     display: flex;
     flex-direction: column;
+    gap: 4px;
 }
 
 .main-info .profile-info .row {
     display: flex;
     position: relative;
     height: 30px;
-    padding: 1px;
-    gap: 1px;
+    padding: 2px;
+    gap: 2px;
 }
 
 .main-info .profile-info .row > span:nth-child(1) {
@@ -110,6 +111,11 @@ ul.nav li a:hover {
 
 .main-info .profile-info .row > span:nth-child(2) {
     background-color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150px;
+    padding: 2px 6px;
 }
 
 .image {
