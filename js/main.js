@@ -18,22 +18,4 @@ toggler.addEventListener('click', function(){
 
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-
-    console.log('Hai, dunia!');
-
-    let a = 10;
-    let b = 20;
-    let c = "Hello, World!";
-    let d = true;
-    let harga1 = "35";
-    let harga2 = "39";
-    const n1 = "Siti";
-    const n2 = "Budi";
-
-    n2 = "Nurhaliza";
-
-    console.log(n1 + " " + n2);
-
-});
 
