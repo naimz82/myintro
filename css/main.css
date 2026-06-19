@@ -97,8 +97,6 @@ ul.nav li a:hover {
     display: flex;
     position: relative;
     height: 30px;
-    padding: 2px;
-    gap: 2px;
 }
 
 .main-info .profile-info .row > span:nth-child(1) {
