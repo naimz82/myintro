@@ -43,16 +43,26 @@ input, button, select {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../img/naimz.jpg);
-    background-position: right center;
-    background-size: contain;
-    background-repeat: no-repeat;
     padding: 100px;
+}
+
+ul.nav {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    row-gap: 50px;
+    column-gap: 30px;
+}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+
+ul.nav li a:hover {
+    border-bottom: solid 2px var(--yellow);
 }
 
 #main-container.inner-container {
@@ -97,84 +107,7 @@ input, button, select {
     font-size: 1.2rem;
 }
 
-.google-search > form {
-    position: relative;
-    width: 300px;
-}
-.search-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 4px;
-    overflow: hidden;
-    padding-right: 28px;
-    height: 28px;
-    width: 28px; /* initial width */
-    transition: all 0.3s ease-in-out;
-}
 
-.search-container.open {
-    width: 100%; /* full width when open */
-    transition: all 0.3s ease-in-out;
-}
-
-.search-container > input {
-    border: none;
-    font-family: inherit;
-    padding: 2px 5px;
-    width: 100%;
-}
-
-.search-container > input:focus {
-    outline: none;
-}
-
-.search-container > button {
-    background-color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.search-container .toggle-search {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    background-color: var(--primary-color);
-}
-
-nav {
-    position: fixed;
-    top: 50px;
-    left: 100px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    column-gap: 30px;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    font-weight: 500;
-    padding: 10px 0px;
-}
-
-nav ul li a:hover {
-    border-bottom: solid 2px var(--yellow);
-}
 
 .contents .inner-title {
     font-size: 32px;
