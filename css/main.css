@@ -108,6 +108,10 @@ ul.nav li a:hover {
     align-items: center;
 }
 
+.main-info .profile-info .row > span:nth-child(2) {
+    background-color: var(--light-grey);
+}
+
 .image {
     position: relative;
     border: solid 5px white;
