@@ -50,12 +50,13 @@ input, button, select {
 }
 
 #main-container > .left-col {
-    flex: 1;
+    flex-grow: 1;
 }
 
 #main-container > .right-col {
     width: 210px;
-    flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 ul.nav {
