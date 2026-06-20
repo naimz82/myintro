@@ -39,6 +39,23 @@ input, button, select {
     font-family: inherit;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 100px 100px;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--off-white);
+}
+
+footer > span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+}
+
 #main-container {
     position: relative;
     width: 100%;
@@ -46,7 +63,7 @@ input, button, select {
     padding: 100px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 50px;
 }
 
 #main-container > .left-col {
@@ -80,6 +97,25 @@ ul.nav li a:hover {
     border-bottom: solid 2px var(--yellow);
 }
 
+.line-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.line-1 > span {
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary-color);
+}
+
+.line-1 > span:first-child {
+    width: 150px;
+    background-color: var(--dark-grey);
+}
+
 .main-info h1 {
     font-family: 'Allura', cursive;
     font-size: 9rem;
@@ -88,32 +124,29 @@ ul.nav li a:hover {
 }
 
 .main-info .profile-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.main-info .profile-info .row {
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content 1fr;
     position: relative;
-    height: 30px;
+    width: 700px;
+    column-gap: 20px;
+    row-gap: 5px;
 }
 
-.main-info .profile-info .row > span:nth-child(1) {
-    display: flex;
-    aspect-ratio: 1 / 1;
-    background-color: var(--dark-grey);
-    justify-content: center;
-    align-items: center;
+.main-info .profile-info .info-title {
+    color: var(--dark-grey);
+    padding: 2px 0px;
 }
 
-.main-info .profile-info .row > span:nth-child(2) {
-    background-color: var(--light-grey);
+.main-info .profile-info .info-title > i {
+    margin-right: 15px;
+}
+
+.main-info .profile-info .info-content {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 150px;
-    padding: 2px 6px;
+    padding: 2px 8px;
+    color: var(--off-white);
 }
 
 .image {
@@ -126,105 +159,5 @@ ul.nav li a:hover {
     width: 100%;
 }
 
-
-.contents {
-    color: white;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
-.contents .inner-title {
-    font-size: 32px;
-    font-weight: 400;
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.contents .inner-title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: var(--yellow);
-    position: absolute;
-    left: 0px;
-    bottom: -5px;
-}
-
-.contents .maths-questions {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    width: 400px;
-    position: relative;
-}
-
-.contents .maths-questions .question-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contents .maths-questions .question-row > div {
-    font-size: 50px;
-}
-
-.contents .maths-questions .question-row .qs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 120px;
-    border: solid 1px #b8b8b8;
-}
-
-.contents .maths-questions .answer-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 40px;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-.contents .maths-questions .answer-row .ans {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 30px;
-    font-size: 60px;
-}
-
-.contents .maths-questions .answer-row .ans input {
-    width: 100%;
-    text-align: center;
-    font-size: 56px;
-}
-
-.contents .maths-questions .answer-row .submit-btn {
-    background-color: var(--yellow);
-    color: var(--text-dark);
-    border: none;
-    padding: 10px 20px;
-    font-size: 24px;
-    cursor: pointer;
-    width: 100%
-}
-
-.contents .maths-questions .answer-row .submit-btn:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
 
 
