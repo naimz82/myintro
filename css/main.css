@@ -86,6 +86,7 @@ ul.nav {
 }
 
 ul.nav li a {
+    position: relative;
     display: block;
     color: white;
     font-weight: 500;
@@ -95,6 +96,18 @@ ul.nav li a {
 
 ul.nav li a:hover {
     border-bottom: solid 2px var(--yellow);
+}
+
+ul.nav li a.active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    left: 50%;
+    transform: translateX(-50%);
+    top: -8px;
 }
 
 .line-1 {
@@ -123,6 +136,21 @@ ul.nav li a:hover {
     margin: 0;
 }
 
+.main-info h3 {
+    font-family: 'Allura', cursive;
+    font-size: 5rem;
+    color: var(--yellow);
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.main-info h3 > span {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .main-info .profile-info {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -141,12 +169,26 @@ ul.nav li a:hover {
     margin-right: 15px;
 }
 
+.main-info .profile-info.list-contents .info-title {
+    color: var(--off-white);
+}
+
 .main-info .profile-info .info-content {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2px 8px;
     color: var(--off-white);
+}
+
+.main-info .profile-info.list-contents .info-content {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-info .profile-info.list-contents .info-content > span {
+    font-size: 0.75rem;
+    font-weight: 500;
 }
 
 .image {

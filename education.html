@@ -4,57 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naim's Intro Website</title>
-    <link rel="stylesheet" href="css/sweetalert2.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Naim's Profile">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div id="main-container" class="inner-container">
-        <div class="site-info">
-            <h1>Naim's Website</h1>
-            <span class="contact-info">
-                <a href="https://wa.me/601120884110" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    +6011-2088 4110
-                </a>
-                <a href="mailto:naim@amz.com.my">
-                    <i class="fa-solid fa-envelope"></i>
-                    naim@amz.com.my
-                </a>
-            </span>
-        </div>
-        <div class="contents">
-            <div class="inner-title">Maths Gym</div>
-
-            <form class="maths-questions">
-                <div class="question-row">
-                    <div class="qs" id="qs1">-</div>
-                    <div class="oper" id="oper1">?</div>
-                    <div class="qs" id="qs2">-</div>
-                </div>
-                <div class="answer-row">
-                    <div class="ans">
-                        <span>=</span>
-                        <input type="number" class="answer" id="ans1" placeholder="Answer">
-                    </div>
-                    <button class="submit-btn" type="submit" id="btnSubmit">Submit</button>
-                </div>
-                <div class="timer"></div>
-            </form>
-            
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="maths.html">Maths Gym</a></li>
-                <li><a href="hangman.html">Hangman</a></li>
+    <div id="main-container">
+        <div class="left-col">
+            <ul class="nav">
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+            <div class="main-info">
+                <h3><span>Naim's Profile</span>Education</h3>
+                <div class="line-1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="profile-info list-contents">
+
+                    <div class="info-title">
+                        <i class="fa-solid fa-award fa-fw"></i>
+                        2023
+                    </div>
+                    <div class="info-content">
+                        Kursus Kefasihan Bahasa Jawi
+                        <span>Akademi Jawi Malaysia</span>
+                    </div>
+                    
+                    <div class="info-title">
+                        <i class="fa-solid fa-award fa-fw"></i>
+                        2020
+                    </div>
+                    <div class="info-content">
+                        Worldview of Islam Series (WISE) Course
+                        <span>HAKIM Sdn. Bhd.</span>
+                    </div>
+                    
+                    <div class="info-title">
+                        <i class="fa-solid fa-award fa-fw"></i>
+                        2018
+                    </div>
+                    <div class="info-content">
+                        Web Application Penetration Testing Course
+                        <span>Serai Solutions</span>
+                    </div>
+                    
+                    <div class="info-title">
+                        <i class="fa-solid fa-award fa-fw"></i>
+                        2015
+                    </div>
+                    <div class="info-content">
+                        Islamic Estate Planner Certification
+                        <span>As-Salihin Trustee Berhad</span>
+                    </div>
+
+                    <div class="info-title">
+                        <i class="fa-solid fa-award fa-fw"></i>
+                        2003
+                    </div>
+                    <div class="info-content">
+                        Youth Leadership Course
+                        <span>Youth &amp; Sports Department of Sarawak</span>
+                    </div>
+
+                    <div class="info-title">
+                        <i class="fa-solid fa-award fa-fw"></i>
+                        2002
+                    </div>
+                    <div class="info-content">
+                        HND Program in Engineering & Business Information Technology
+                        <span>British Malaysian Institute</span>
+                    </div>
+
+                    <div class="info-title">
+                        <i class="fa-solid fa-award fa-fw"></i>
+                        1999
+                    </div>
+                    <div class="info-content">
+                        Sijil Pelajaran Malaysia (SPM)
+                        <span>Kolej D.P.A.H. Abdillah</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="image">
+                <img src="img/naimz.png" alt="Naim Zulkipli">
+            </div>
+        </div>
     </div>
-    <script src="js/sweetalert2.min.js"></script>
-    <script src="js/maths.js"></script>
+    <footer>
+        <span></span>
+        Last Updated: 21 June 2026
+    </footer>
+    <script src="libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 
