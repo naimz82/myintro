@@ -11,8 +11,8 @@ function shuffleObjectKeys(obj) {
 let picinfo = {
     "001": "Group Coding Class Session",
     "002": "Strategic Roundtable Discussion",
-    "003": "Event with Dr. Abdal Hakim Murad (Cambridge)",
-    "004": "Event with Royal Laureate Professor Tan Sri Dr. SMN Al-Attas",
+    "003": "Managing Event with Dr. Abdal Hakim Murad (Cambridge)",
+    "004": "Managing Event with Royal Laureate Professor Tan Sri Dr. SMN Al-Attas",
     "005": "Managing Youth Program in Sarawak",
     "006": "Training Event with Yayasan TM's Scholars",
     "007": "Leadership Training in KL",
