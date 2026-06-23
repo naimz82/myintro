@@ -34,10 +34,22 @@
                     <span></span>
                     <span></span>
                 </div>
-                <div class="profile-info list-contents">
-
-
-
+                <div class="profile-contact">
+                    <form method="post" id="contactForm">
+                        <label>
+                            <span>Your Name:</span>
+                            <input type="text" name="fullname" id="fullname" required>
+                        </label>
+                        <label>
+                            <span>Your E-mail:</span>
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                        <label class="text">
+                            <span>Your Message:</span>
+                            <textarea name="message" id="message"></textarea>
+                        </label>
+                        <button type="submit">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -51,6 +63,7 @@
         <span></span>
         Last Updated: 21 June 2026
     </footer>
+    <script src="js/contact.js"></script>
 </body>
 </html>
 
