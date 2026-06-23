@@ -63,7 +63,7 @@ footer > span {
     padding: 100px;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 100px;
 }
 
 #main-container > .left-col {
@@ -229,7 +229,26 @@ ul.nav li a.active::before {
 }
 
 .main-info .profile-info.list-skills .info-content > span > em .fa-star.empty {
-    opacity: 0.3;
+    opacity: 0.2;
+}
+
+.main-info .profile-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    position: relative;
+    gap: 50px;
+}
+
+.main-info .profile-gallery > a {
+    display: block;
+    aspect-ratio: 1 / 1;
+    border: solid 2px var(--off-white);
+    position: relative;
+}
+
+.main-info .profile-gallery > a > img {
+    display: block;
+    width: 100%;
 }
 
 .image {
