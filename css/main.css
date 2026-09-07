@@ -159,6 +159,7 @@ ul.nav li a.active::before {
     width: 700px;
     column-gap: 20px;
     row-gap: 5px;
+    margin-bottom: 50px;
 }
 
 .main-info .profile-info.list-badges {
@@ -169,8 +170,8 @@ ul.nav li a.active::before {
 
 .main-info .profile-info.list-badges a {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border: solid 2px var(--off-white);
     position: relative;
 }
