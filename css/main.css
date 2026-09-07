@@ -161,6 +161,25 @@ ul.nav li a.active::before {
     row-gap: 5px;
 }
 
+.main-info .profile-info.list-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-info .profile-info.list-badges a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: solid 2px var(--off-white);
+    position: relative;
+}
+
+.main-info .profile-info.list-badges a > img {
+    display: block;
+    width: 100%;
+}
+
 .main-info .profile-info.list-skills {
     row-gap: 20px;
 }
